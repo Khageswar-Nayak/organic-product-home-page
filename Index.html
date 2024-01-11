@@ -65,11 +65,17 @@
         <div class="product_section">
           <!-- ----------------------------------first card ---------------------------------------- -->
           <div class="product_card">
+            <!-- <div style="position: relative"> -->
+            <button class="product_image_button">QUICK VIEW</button>
             <img
               src="L&L_Website_lineup2.png"
               alt="product"
               style="width: 100%"
+              onmouseover="showButton()"
+              onmouseout="hideButton()"
             />
+            <!-- </div> -->
+
             <div class="product_details">
               <p class="product_title">Relief & Repair Moisturizer</p>
               <p class="product_description">
@@ -131,7 +137,7 @@
           <!--  -----------------------------------------slider button ---------------------------------------- -->
 
           <button class="product_slider_left-button">
-            <i class="bi bi-chevron-right"></i>
+            <i class="bi bi-chevron-left"></i>
           </button>
           <button class="product_slider_right-button">
             <i class="bi bi-chevron-right"></i>
@@ -139,5 +145,7 @@
         </div>
       </div>
     </header>
+
+    <script src="script.js"></script>
   </body>
 </html>

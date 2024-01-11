@@ -138,6 +138,7 @@ nav {
 .product_card {
   width: 19vw;
   margin-right: 20px;
+  position: relative;
 }
 
 .product_card .product_details {
@@ -180,6 +181,8 @@ nav {
   left: 9rem;
   top: 10rem;
   padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border-radius: 50%;
 }
 
@@ -193,10 +196,31 @@ nav {
   right: 9rem;
   top: 10rem;
   padding: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border-radius: 50%;
 }
 
 .product_section .product_slider_right-button:hover {
   background-color: black;
   color: white;
+}
+
+.product_image_button {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 286px;
+  border: 0;
+  background-color: white;
+  font-size: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #00964a;
+  cursor: pointer;
+}
+
+.product_image_button:hover {
+  display: block;
 }
