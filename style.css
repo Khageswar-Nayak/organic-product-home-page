@@ -1,0 +1,202 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+
+* {
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.advertise {
+  background-color: #00964a;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 29px;
+  color: white;
+  font-size: 10px;
+  position: relative;
+}
+
+.advertise .closeIcon {
+  position: absolute;
+  right: 12px;
+  top: 3px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+nav {
+  position: fixed;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  height: 10vh;
+  background-color: white;
+}
+
+.navbar .options span {
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: context-menu;
+}
+
+.navbar .icon i {
+  margin-left: 20px;
+}
+
+.options span:hover,
+.icon i:hover {
+  color: #00964a;
+}
+
+.navbar img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.header {
+  background-image: url("/DeshleeCouch_Lifestyle8.png");
+  margin-top: 83px;
+  height: 86vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header div {
+  padding-right: 20rem;
+}
+
+.header p {
+  color: white;
+  font-size: 50px;
+  font-family: fangsong;
+  font-weight: 900;
+  width: 2rem;
+  margin: 0;
+}
+
+.header button {
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 10px;
+}
+
+.header button:hover {
+  background-color: black;
+  color: white;
+}
+
+.description {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 27rem;
+  padding-right: 25rem;
+  text-align: center;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.Group1125 {
+  width: 55rem;
+}
+
+.green-leaf-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/*  -----------------------------------  products section start --------------------------------------- */
+
+.product_section {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.product_card {
+  width: 19vw;
+  margin-right: 20px;
+}
+
+.product_card .product_details {
+  background-color: #f5f3ef;
+  padding: 10px;
+}
+
+.product_details .product_title {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.product_details .product_description {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.product_details .product_price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.product_details .product_price .product_button {
+  font-size: 8px;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+
+.product_details .product_price .product_button:hover {
+  background-color: white;
+  color: black;
+  border: 0;
+}
+
+.product_section .product_slider_left-button {
+  position: absolute;
+  left: 9rem;
+  top: 10rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.product_section .product_slider_left-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.product_section .product_slider_right-button {
+  position: absolute;
+  right: 9rem;
+  top: 10rem;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.product_section .product_slider_right-button:hover {
+  background-color: black;
+  color: white;
+}
