@@ -186,6 +186,8 @@ nav {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
 }
 
 .product_section .product_slider_left-button:hover {
@@ -201,6 +203,8 @@ nav {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
 }
 
 .product_section .product_slider_right-button:hover {
@@ -239,5 +243,49 @@ nav {
 }
 
 .all-products_button:hover {
+  background-color: black;
+}
+
+/* ------------------------------------------- Information Section ----------------------------- */
+.information {
+  background-color: #f5f3ef;
+  margin-top: 5rem;
+  /* margin-left: 3rem; */
+  /* margin-right: 3rem; */
+}
+
+.information_one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information_one_details {
+  padding: 6rem;
+  padding-right: 9rem;
+}
+
+.information_one_details h2 {
+  color: #00964a;
+
+  font-family: math;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.information_one_details p {
+  font-size: 13px;
+}
+
+.information_one_details button {
+  background-color: #00964a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  color: white;
+  border-radius: 50px;
+}
+.information_one_details button:hover {
   background-color: black;
 }
