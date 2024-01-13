@@ -56,6 +56,10 @@ nav {
   cursor: context-menu;
 }
 
+.menu_icon {
+  display: none;
+}
+
 .navbar .options .about_options {
   padding: 1rem;
   background-color: white;
@@ -77,11 +81,15 @@ nav {
   color: #00964a;
 }
 
-.navbar img {
+.navbar .webpage_logo {
   position: absolute;
   top: 0;
   left: 47%;
   z-index: 100;
+}
+
+.webpage_logo_mobile {
+  display: none;
 }
 
 .body_container {
@@ -144,10 +152,26 @@ nav {
   width: 55rem;
 }
 
-.green-leaf-image {
+.group2562 {
+  display: none;
+}
+
+.product_heading {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+}
+
+.product_heading p {
+  text-align: center;
+}
+.product_heading h3 {
+  text-align: center;
+}
+
+.green-leaf-image {
+  display: flex;
+  justify-content: center;
 }
 
 /*  -----------------------------------  products section start --------------------------------------- */
@@ -163,6 +187,10 @@ nav {
   width: 19vw;
   margin-right: 20px;
   position: relative;
+}
+
+.product_imagesForMobile {
+  display: none;
 }
 
 .product_card .product_details {
@@ -203,7 +231,7 @@ nav {
 .product_section .product_slider_left-button {
   position: absolute;
   left: 9rem;
-  top: 10rem;
+  top: 13rem;
   padding: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -220,7 +248,7 @@ nav {
 .product_section .product_slider_right-button {
   position: absolute;
   right: 9rem;
-  top: 10rem;
+  top: 13rem;
   padding: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -376,6 +404,10 @@ nav {
   justify-content: space-between;
 }
 
+.information_one img {
+  width: 45vw;
+}
+
 .information_one_details {
   padding: 6rem;
   padding-right: 9rem;
@@ -425,6 +457,10 @@ nav {
   font-size: 3rem;
 }
 
+.information_two_right_div_forMobile {
+  display: none;
+}
+
 .information_two_right_div {
   display: flex;
   flex-direction: column;
@@ -457,10 +493,14 @@ nav {
   justify-content: space-between;
   padding-left: 7rem;
   padding-right: 2rem;
-  /* isolation: isolate; */
 }
 
-.information_three img {
+.information_three_secondImage {
+  padding-left: 7rem;
+  margin-top: -15rem;
+}
+
+.information_three_firstImage {
   margin-top: -70px;
   z-index: 1;
 }
@@ -504,6 +544,17 @@ nav {
   height: 53vh;
 }
 
+.collection_image_shopButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection_image_shopButton .bi-three-dots {
+  display: none;
+}
+
 .collection_button {
   background-color: #00964a;
   padding-top: 5px;
@@ -523,6 +574,14 @@ nav {
 .group_2531 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.group_2531_Image {
+  width: 55rem;
+}
+
+.group_2531_thirdImage {
+  display: none;
 }
 
 .group_2531 h5 {
@@ -571,6 +630,15 @@ nav {
   background-color: black;
 }
 
+.specialization {
+  display: flex;
+  gap: 4rem;
+}
+
+.specialization img {
+  width: 55vw;
+}
+
 /* ------------------------------------------- Greenery section ----------------------------------- */
 
 .greenery {
@@ -590,6 +658,10 @@ nav {
 
 .greenery_items .greenery_card {
   width: 23vw;
+}
+
+.greenery_card_forMobile {
+  display: none;
 }
 
 .greenery_card h5 {
@@ -616,6 +688,10 @@ nav {
 .greenery_card button:hover {
   background-color: white;
   color: black;
+}
+
+.greenery_card_dot {
+  display: none;
 }
 
 .greenery_button {
@@ -694,4 +770,295 @@ nav {
 
 .footer_above_banner button:hover {
   background-color: black;
+}
+
+/* -------------------------------------------------------------- MOBILE VIEW -------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+  .body_container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar {
+    height: 7vh;
+  }
+
+  .options_menu {
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+  .webpage_logo {
+    display: none;
+  }
+
+  .webpage_logo_mobile {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 47%;
+    z-index: 100;
+  }
+
+  .description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .Group1125 {
+    display: none;
+  }
+
+  .group2562 {
+    display: block;
+  }
+
+  /* ------------------------------------------------- main body container mobile view --------------------------------------- */
+
+  .header {
+    background-size: 41rem 39rem;
+  }
+
+  .header div {
+    padding-right: 13rem;
+    margin-top: 12rem;
+  }
+
+  .product_heading p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* ---------------------------------------- product section mobile view ---------------------------------------------------- */
+
+  .product_section {
+    overflow: hidden;
+  }
+  .product_card {
+    display: none;
+  }
+
+  .product_imagesForMobile {
+    display: block;
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+    overflow: hidden;
+    padding-right: 44rem;
+  }
+  .product_section .product_slider_left-button {
+    left: 1rem;
+    top: 13rem;
+  }
+
+  .product_section .product_slider_right-button {
+    right: 1rem;
+    top: 13rem;
+  }
+
+  /* ----------------------------------------------------------------- information section mobile view --------------------------------------- */
+  .information_one {
+    flex-direction: column;
+  }
+
+  .information_one img {
+    width: auto;
+  }
+
+  .information_one_details {
+    padding: 3rem;
+  }
+
+  .information_one_details h2 {
+    font-size: 3rem;
+  }
+
+  .information_two {
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .information_two_right_div {
+    display: none;
+  }
+
+  .information_two_right_div_forMobile {
+    display: block;
+  }
+  .information_headingForMobile {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .information_three {
+    flex-direction: column-reverse;
+    overflow: hidden;
+    width: 100vw;
+    padding: 2rem;
+  }
+
+  .information_three_firstImage {
+    width: 100vw;
+    margin-left: -3rem;
+  }
+
+  .information_three_secondImage {
+    display: none;
+  }
+
+  /* ------------------------------------------------------------------ collection section mobile view -------------------------------- */
+
+  .group_2531_thirdImage {
+    display: block;
+  }
+
+  .group_2531_Image {
+    display: none;
+  }
+
+  .collection_heading p {
+    width: 62%;
+  }
+  .collection_image {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .collection_image img {
+    display: none;
+  }
+
+  .collection_image img:first-child {
+    display: block;
+    width: 100vw;
+    height: 53vh;
+  }
+
+  .specialization {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .specialization img {
+    width: 100vw;
+  }
+
+  .collection_image_shopButton .bi-three-dots {
+    display: block;
+    color: #00964a;
+    font-size: 47px;
+  }
+  .group_2531 div {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .collection_second_part {
+    width: 80%;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+
+  /* ---------------------------------------------------------- greenery section mobile view ---------------------------- */
+
+  .greenery p {
+    width: 81%;
+  }
+
+  .greenery_items {
+    display: none;
+  }
+
+  .greenery_card_forMobile {
+    display: block;
+    padding: 2rem;
+  }
+
+  .greenery_card_forMobile h5 {
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+
+  .greenery_card_forMobile button {
+    font-size: 8px;
+    padding: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+  }
+
+  .greenery_card_forMobile button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .greenery_button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .greenery_button button {
+    margin-top: 0;
+  }
+
+  .greenery_card_dot {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .greenery_card_dot i:first-child {
+    color: #00964a;
+  }
+
+  /* ------------------------------------------ footer above image mobile view ----------------------------------------*/
+
+  .images_above_footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-left: 3rem;
+    margin-right: 0;
+  }
+
+  .images_above_footer div {
+    width: 77vw;
+  }
+  .images_above_footer div h5 {
+    width: 47vw;
+    padding-top: 1rem;
+  }
+  .images_above_footer img:first-child {
+    display: block;
+  }
+  .images_above_footer img:nth-child(2) {
+    display: block;
+  }
+  .images_above_footer img {
+    display: none;
+  }
+
+  .footer_above_banner {
+    margin-top: 2rem;
+  }
+
+  .footer_above_banner h1 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    text-align: center;
+  }
 }

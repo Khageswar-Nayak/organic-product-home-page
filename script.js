@@ -1,14 +1,20 @@
 function showButton() {
   let button = document.querySelector(".product_image_button");
-  let aboutOptions = document.querySelector(".about_options");
 
   button.style.display = "block";
-  aboutOptions.style.display = "block";
 }
 
 function hideButton() {
   let button = document.querySelector(".product_image_button");
-  let aboutOptions = document.querySelector(".about_options");
   button.style.display = "none";
-  aboutOptions.style.display = "none";
 }
+
+const showAboutOptions = () => {
+  let aboutOptions = document.querySelector(".about_options");
+  aboutOptions.style.display = "block";
+};
+
+const hideAboutOptions = () => {
+  let aboutOptions = document.querySelector(".about_options");
+  aboutOptions.style.display = "none";
+};

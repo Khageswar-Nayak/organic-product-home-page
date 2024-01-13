@@ -21,15 +21,17 @@
       </div>
       <div class="navbar">
         <div class="options">
-          <span>SHOP <i class="bi bi-chevron-down"></i></span>
-          <span
-            class="about"
-            onmouseover="showButton()"
-            onmouseout="hideButton()"
-            >ABOUT <i class="bi bi-chevron-down"></i
-          ></span>
-          <span>THE GREENERY</span>
-          <div class="shop_options"></div>
+          <div class="options_menu">
+            <span>SHOP <i class="bi bi-chevron-down"></i></span>
+            <span
+              class="about"
+              onmouseover="showAboutOptions()"
+              onmouseout="hideAboutOptions()"
+              >ABOUT <i class="bi bi-chevron-down"></i
+            ></span>
+            <span>THE GREENERY</span>
+          </div>
+          <i class="bi bi-list menu_icon"></i>
           <div class="about_options">
             <p>Our Story</p>
             <p>Our Promise</p>
@@ -45,7 +47,12 @@
           <i class="bi bi-person-square"></i>
           <i class="bi bi-bag"></i>
         </div>
-        <img src="/images/Group 1.png" alt="logo" />
+        <img src="/images/Group 1.png" alt="logo" class="webpage_logo" />
+        <img
+          src="/images/Path 1875.png"
+          alt="logo"
+          class="webpage_logo_mobile"
+        />
       </div>
     </nav>
 
@@ -64,15 +71,21 @@
       </div>
       <div class="brands">
         <img src="/images/Group 1125.png" alt="brands" class="Group1125" />
+        <img src="/images/Group 2562.png" alt="brands" class="group2562" />
       </div>
 
-      <div class="green-leaf-image">
-        <img src="/images/Group 2503.png" alt="green leaf" />
+      <div class="product_heading">
+        <div>
+          <div class="green-leaf-image">
+            <img src="/images/Group 2503.png" alt="green leaf" />
+          </div>
+
+          <h3>Shop Our Skin-Loving Lineup</h3>
+          <p>
+            Skincare formulated for hydrated, nourished, hey-good-looking skin.
+          </p>
+        </div>
       </div>
-      <h3 style="text-align: center">Shop Our Skin-Loving Lineup</h3>
-      <p style="text-align: center">
-        Skincare formulated for hydrated, nourished, hey-good-looking skin.
-      </p>
 
       <!--   --------------------------------------  product section ---------------------------------------- -->
       <div class="product_section">
@@ -82,6 +95,8 @@
             class="product_image_button"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
+            onmouseover="showButton()"
+            onmouseout="hideButton()"
           >
             QUICK VIEW
           </button>
@@ -212,6 +227,13 @@
           </div>
         </div>
 
+        <!-- ------------------------------------------------ product cards for mobile --------------------------->
+        <div class="product_imagesForMobile">
+          <img src="images/Group 2693.png" alt="image" />
+          <img src="images/Group 2692.png" alt="image" />
+          <img src="images/Group 2694.png" alt="image" />
+        </div>
+
         <!--  -----------------------------------------slider button ---------------------------------------- -->
 
         <button class="product_slider_left-button">
@@ -234,7 +256,6 @@
           <img
             src="/images/kreated-media-p0ASrbayoPQ-unsplash.png"
             alt="image"
-            style="width: 45vw"
           />
           <div class="information_one_details">
             <h2>No Stress. Just Great Skin.</h2>
@@ -262,6 +283,14 @@
             <p style="color: gray">
               Our products contain plants with benefits. Like broad-spectrum
               cannabidiol, a.k.a. CBD.
+            </p>
+          </div>
+          <div class="information_two_right_div_forMobile">
+            <p class="information_headingForMobile">Formula-First</p>
+            <p>
+              We pair powerful ingredients - like vitamin C, squalene,
+              hyaluronic acid, and bakuchiol - with broad-spectrum cannabidiol
+              to help relieve a variety of skin issues and renew skin’s health.
             </p>
           </div>
           <div class="information_two_right_div">
@@ -317,12 +346,13 @@
           <img
             src="/images/mariano-nocetti-eFpgyR5O4CY-unsplash.png"
             alt="image"
+            class="information_three_firstImage"
           />
         </div>
         <img
           src="/images/nazar-hrabovyi-lIuxlN0zSjs-unsplash.png"
           alt="image"
-          style="padding-left: 7rem; margin-top: -15rem"
+          class="information_three_secondImage"
         />
       </div>
 
@@ -344,7 +374,8 @@
         />
         <img src="/images/Component 13 – 1.png" alt="image" />
       </div>
-      <div style="display: flex; justify-content: center">
+      <div class="collection_image_shopButton">
+        <i class="bi bi-three-dots"></i>
         <button class="collection_button">
           SHOP ALL <i class="bi bi-chevron-right"></i>
         </button>
@@ -356,22 +387,23 @@
             <img
               src="/images/Group 2531.png"
               alt="image"
-              style="width: 55rem"
+              class="group_2531_Image"
             />
             <img
               src="/images/Group 2532.png"
               alt="image"
-              style="width: 55rem"
+              class="group_2531_Image"
+            />
+            <img
+              src="images/Group 2660.png"
+              alt="image"
+              class="group_2531_thirdImage"
             />
           </div>
         </div>
       </div>
-      <div style="display: flex; gap: 4rem">
-        <img
-          src="/images/adam-winger-Xt4g9VbMljE-unsplash.png"
-          alt="image"
-          style="width: 55vw"
-        />
+      <div class="specialization">
+        <img src="/images/adam-winger-Xt4g9VbMljE-unsplash.png" alt="image" />
         <div class="collection_second_part">
           <h1>Making a Difference</h1>
           <p>
@@ -452,6 +484,27 @@
           <button>READ MORE <i class="bi bi-chevron-right"></i></button>
         </div>
       </div>
+
+      <!-- ------------------------------------------------------------ greenery card for mobile -------------------   -->
+
+      <div class="greenery_card_forMobile">
+        <img
+          src="/images/L&L_Website_collections1.png"
+          alt="image"
+          style="width: 100%"
+        />
+
+        <h5>3 Recipes You’ll Love, Inspired by Nature’s Goodness</h5>
+
+        <button>READ MORE <i class="bi bi-chevron-right"></i></button>
+      </div>
+
+      <div class="greenery_card_dot">
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot"></i>
+      </div>
+
       <div class="greenery_button">
         <button>ENTER THE GREENERY <i class="bi bi-chevron-right"></i></button>
       </div>
@@ -484,6 +537,14 @@
           src="/images/Screen Shot 2020-10-23 at 11.20.20 AM.png"
           alt="image"
         />
+      </div>
+
+      <div class="greenery_card_dot">
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot"></i>
+        <i class="bi bi-dot"></i>
       </div>
 
       <div class="footer_above_banner">
