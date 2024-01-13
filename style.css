@@ -963,6 +963,7 @@ nav {
 
   .menu_icon {
     display: block;
+    font-size: 20px;
   }
 
   .webpage_logo {
@@ -1167,6 +1168,13 @@ nav {
     padding-top: 1rem;
   }
 
+  .bi-three-dots {
+    display: block;
+    color: #00964a;
+    font-size: 47px;
+    text-align: center;
+  }
+
   .greenery_card_forMobile button {
     font-size: 8px;
     padding: 9px;
@@ -1193,7 +1201,7 @@ nav {
     margin-top: 0;
   }
 
-  .greenery_card_dot {
+  /* .greenery_card_dot {
     display: block;
     font-size: 2rem;
     text-align: center;
@@ -1201,7 +1209,7 @@ nav {
 
   .greenery_card_dot i:first-child {
     color: #00964a;
-  }
+  } */
 
   /* ------------------------------------------ footer above image mobile view ----------------------------------------*/
 
