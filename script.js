@@ -18,3 +18,13 @@ const hideAboutOptions = () => {
   let aboutOptions = document.querySelector(".about_options");
   aboutOptions.style.display = "none";
 };
+
+const showShopOptions = () => {
+  let shopOptions = document.querySelector(".shop_options");
+  shopOptions.style.display = "block";
+};
+
+const hideShopOptions = () => {
+  let shopOptions = document.querySelector(".shop_options");
+  shopOptions.style.display = "none";
+};

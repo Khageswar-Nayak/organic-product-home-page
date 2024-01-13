@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,9 @@
       <div class="navbar">
         <div class="options">
           <div class="options_menu">
-            <span>SHOP <i class="bi bi-chevron-down"></i></span>
+            <span onmouseover="showShopOptions()" onmouseout="hideShopOptions()"
+              >SHOP <i class="bi bi-chevron-down"></i
+            ></span>
             <span
               class="about"
               onmouseover="showAboutOptions()"
@@ -32,14 +34,36 @@
             <span>THE GREENERY</span>
           </div>
           <i class="bi bi-list menu_icon"></i>
-          <div class="about_options">
+          <div
+            class="about_options"
+            onmouseover="showAboutOptions()"
+            onmouseout="hideAboutOptions()"
+          >
             <p>Our Story</p>
             <p>Our Promise</p>
             <p>Our Beliefs</p>
           </div>
-          <div class="shop_options">
-            <div></div>
-            <div></div>
+          <div
+            class="shop_options"
+            onmouseover="showShopOptions()"
+            onmouseout="hideShopOptions()"
+          >
+            <div class="shop_options_container">
+              <div>
+                <p>BY CATEGORY</p>
+                <p>Shop All</p>
+                <p>Cleansers</p>
+                <p>Serums</p>
+                <p>Moisturizers</p>
+                <p>Mists</p>
+              </div>
+              <div>
+                <p>BY COLLECTION</p>
+                <p>illuminating</p>
+                <p>Clearing</p>
+                <p>Soothing</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="icon">
@@ -60,7 +84,10 @@
     <section class="body_container">
       <div class="header">
         <div>
-          <p>Natural, Plant- Powered Beauty</p>
+          <p>Natural,</p>
+          <p>Plant-</p>
+          <p>Powered</p>
+          <p>Beauty</p>
           <button>SHOP NOW <i class="bi bi-chevron-right"></i></button>
         </div>
       </div>
@@ -278,7 +305,7 @@
 
         <!-- ----------------------------------------------------------information two------------------------- -->
         <div class="information_two">
-          <div class="information_two_left" style="width: 70vw">
+          <div class="information_two_left" style="width: 85vw">
             <h2>Plant Power to the People</h2>
             <p style="color: gray">
               Our products contain plants with benefits. Like broad-spectrum
@@ -508,6 +535,8 @@
       <div class="greenery_button">
         <button>ENTER THE GREENERY <i class="bi bi-chevron-right"></i></button>
       </div>
+
+      <!-- ------------------------------------------------------------- images above footer ----------------------------- -->
       <div class="images_above_footer">
         <div>
           <img src="/images/Image 5.png" alt="image" />
@@ -550,6 +579,59 @@
       <div class="footer_above_banner">
         <h1>Ready to Hydrate?</h1>
         <button>SHOP NOW <i class="bi bi-chevron-right"></i></button>
+      </div>
+      <!-- ---------------------------------------------------------------------- footer --------------------------------- -->
+      <div class="footer">
+        <div>
+          <h5>About</h5>
+          <p>Our Story</p>
+          <p>Our Promise</p>
+          <p>Shipping/Returns</p>
+          <p>FAQS</p>
+        </div>
+        <div>
+          <h5>More Info</h5>
+          <p>The Greenery</p>
+          <p>Skin Glossary</p>
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+          <p>COA</p>
+        </div>
+        <div class="footer_third_div">
+          <h5>Get in Touch</h5>
+          <p>
+            Have a question? Want to just say hello? Send us a message anytime
+            at <span>@lumaandleaf.com</span>
+          </p>
+          <p>
+            The information and products on this site have not been evaluated by
+            the FDA. The products are not intended to Diagnose, treat, cure or
+            prevent any disease.
+          </p>
+        </div>
+        <div class="footer_fourth_div">
+          <h5>All of the Tea. None of the Spam.</h5>
+          <div>
+            <input type="text" placeholder="Enter Email Address" disabled />
+            <button>
+              <span>SIGN UP</span> <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+          <div class="footer_fourth_div_lastImages">
+            <img src="images/Path 8341.png" alt="image" />
+            <div class="social_media_icons">
+              <div>
+                <img src="images/Image 5.png" alt="image" style="width: 26px" />
+                <img src="images/Path 50.png" alt="image" />
+                <img src="images/Path 51.png" alt="image" />
+                <img src="images/Path 52.png" alt="image" />
+              </div>
+              <p style="font-size: 10px">
+                2020 Luma & Leaf. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
