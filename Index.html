@@ -31,9 +31,15 @@
               onmouseout="hideAboutOptions()"
               >ABOUT <i class="bi bi-chevron-down"></i
             ></span>
+
             <span>THE GREENERY</span>
           </div>
-          <i class="bi bi-list menu_icon"></i>
+          <!-- ----------------------------------- menu icon for mobile ------------- -->
+          <i
+            class="bi bi-list menu_icon"
+            onmouseover="showMenuOptionsInMobile()"
+            onmouseout="hideMenuOptionsInMobile()"
+          ></i>
           <div
             class="about_options"
             onmouseover="showAboutOptions()"
@@ -77,6 +83,56 @@
           alt="logo"
           class="webpage_logo_mobile"
         />
+      </div>
+      <!-- ------------------------------------------- nav bar options in mobile -------------------------------- -->
+      <div
+        class="menu_options_forMobile"
+        onmouseover="showMenuOptionsInMobile()"
+        onmouseout="hideMenuOptionsInMobile()"
+      >
+        <div class="mobile_options_menu">
+          <div
+            onmouseover="showShopOptionsInmobile()"
+            onmouseout="hideShopOptionsInMobile()"
+          >
+            SHOP <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="shop_optionsInMobile">
+            <div class="shop_options_containerForMobile">
+              <div>
+                <p>BY CATEGORY</p>
+                <p>Shop All</p>
+                <p>Cleansers</p>
+                <p>Serums</p>
+                <p>Moisturizers</p>
+                <p>Mists</p>
+              </div>
+              <div>
+                <p>BY COLLECTION</p>
+                <p>illuminating</p>
+                <p>Clearing</p>
+                <p>Soothing</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="border-bottom: 2px solid"></div>
+          <div
+            onmouseover="showAboutOptionsInmobile()"
+            onmouseout="hideAboutOptionsInMobile()"
+          >
+            ABOUT <i class="bi bi-chevron-down"></i>
+          </div>
+
+          <div class="about_options_forMobile">
+            <p>Our Story</p>
+            <p>Our Promise</p>
+            <p>Our Beliefs</p>
+          </div>
+
+          <div style="border-bottom: 2px solid"></div>
+          <div>THE GREENERY <i class="bi bi-chevron-down"></i></div>
+        </div>
       </div>
     </nav>
 

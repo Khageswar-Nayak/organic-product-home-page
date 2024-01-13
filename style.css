@@ -99,6 +99,7 @@ nav {
 }
 .navbar .options .shop_options div div:last-child {
   padding-left: 1rem;
+  margin-left: 2rem;
   border-left: 2px solid grey;
 }
 
@@ -121,6 +122,57 @@ nav {
 .webpage_logo_mobile {
   display: none;
 }
+
+/* -------------------------------------------------------------- nav bar options in mobile ------------------------------ */
+
+.menu_options_forMobile {
+  display: none;
+}
+.mobile_options_menu {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.shop_optionsInMobile {
+  display: none;
+}
+
+.shop_options_containerForMobile {
+  display: flex;
+}
+
+.shop_options_containerForMobile div p:first-child {
+  font-size: 10px;
+}
+
+.shop_options_containerForMobile div p {
+  color: grey;
+  font-size: 15px;
+}
+
+.shop_options_containerForMobile div:last-child {
+  padding-left: 1rem;
+  margin-left: 2rem;
+  border-left: 2px solid grey;
+}
+
+.about_options_forMobile {
+  display: none;
+}
+
+.about_options_forMobile p {
+  font-size: 18px;
+  color: grey;
+}
+
+/* -------------------------------------------------------------------- main container of the webpage ---------------------- */
 
 .body_container {
   padding-left: 20px;
